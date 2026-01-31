@@ -1,0 +1,17 @@
+{
+  "name": "streamhub",
+  "version": "1.0.0",
+  "description": "Video streaming backend API",
+  "keywords": [
+    "backend",
+    "video",
+    "streaming"
+  ],
+  "license": "ISC",
+  "author": "Nikhil",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
