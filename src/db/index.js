@@ -4,11 +4,12 @@ import dotenv from "dotenv";
 dotenv.config({ path: "../../.env" });
 const connectDB = async () => {
   try {
-    const consnectionInstance = await mongoose.connect(
-      `${process.env.MONGODB_URI}/${DB_NAME}`
-    );
+    const connectionInstance = await mongoose.connect(process.env.MONGODB_URI, {
+      dbName: DB_NAME,
+    });
+
     console.log(
-      `MongoDB connected ✅ DB HOST: ${consnectionInstance.connection.host}`
+      `MongoDB connected ✅ DB HOST: ${connectionInstance.connection.host}`
     );
   } catch (error) {
     console.log("MongoDB connection error", error);
